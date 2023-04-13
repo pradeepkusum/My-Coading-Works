@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #container{
+        width: 20%;
+        margin: auto;
+    }
+    input{
+        padding: 10pz;
+    }
+   #Submit{
+     color: white;
+     background-color: blue;
+     font-weight: bold;
+     font-size: 15px;
+     padding: 5px;
+     margin: auto;
+   }
+</style>
+<body>
+    <div id="container">
+    
+        <input type="text" placeholder="Enter Name" value="" id="name">
+        <input type="email" placeholder="Enter Email-id" value="" id="email">
+        <button id="btn">Submit</button>
+    
+</div>
+    <div>
+        <h1 id="ram">Name</h1>
+        <p id="shyam">Email</p>
+    </div>
+</body>
+</html>
+
+<script>
+
+    document.getElementById("btn").addEventListener("click",myfunction)
+   
+    function myfunction(){
+     
+        let n = document.getElementById("name").value;
+        console.log(n)
+   let e = document.getElementById("email").value
+   console.log(e)
+
+   document.getElementById("ram").innerText ="My Name is:- "+ n;
+   document.getElementById("shyam").innerText ="Email-id:- "+ e;
+
+    }
+  
+   
+</script>
